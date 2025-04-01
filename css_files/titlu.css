@@ -1,0 +1,19 @@
+@keyframes apare {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+h1 {
+    animation: apare 1s ease forwards;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px;
+    text-shadow:#fff;
+}
+

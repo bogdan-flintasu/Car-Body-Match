@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Flintasu Bogdan">
+        <meta name="description" content="camp de completare">
+        <title>Caropedia</title>
+        <link rel="stylesheet" href="chenar.css" type="text/css">
+        <link rel="stylesheet" href="body.css" type="text/css">
+        <link rel="stylesheet" href="titlu.css" type="text/css">
+        <link rel="stylesheet" href="buton.css" type="text/css">
+        <link rel="stylesheet" href="aliniere.css" type="text/css">
+        <link rel="icon" href="logocaropedia.jpg">
+        <style>
+            .ecran
+            {
+                position: fixed; 
+                width: 100vw; 
+                height: 100vh; 
+                left: -1%;
+                top: -10%;
+                background: rgba(0, 0, 0, 0.609); 
+                opacity: 5;
+                display: flex; 
+                justify-content: center; 
+                align-items: center; 
+                font-size: 50px;
+                text-transform: uppercase;
+                color: rgb(255, 255, 255);
+                text-align: center;
+            }
+            .disabled
+            {
+                pointer-events: none;
+                opacity:0.5;
+            }
+            .summary
+            {
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body href="body.css">
+        <p href="aliniere.css"><img src="logocaropedia.jpg" alt="Welcome to our website!"></p>
+        <div class="chenar" style="--clr:#282727">
+            <h1>Let us know a bit about yourself!</h1>
+            <br><br>
+
+
+            
+            <h2>A little bit about us!</h2>
+            <p>&nbsp;&nbsp;The automobile industry is giving you many options of car bodies. We are here to help you understand which one is truly matches your needs. Here are some things to keep in mind before trying our form: </p>
+            <ul>
+                <li>In order to find a proper answer try to be honest when taking the form.</li>
+                <li>Try to use the indications we provided for every question. It might help the algorithm </li>
+                <li>This is the first version of the website. If you find any bugs mail us on caropedia@gmail.com!
+                </li>
+                <br>
+                Enjoy!
+            </ul>
+
+
+            <br><br>
+            <div class="chenar" style="--clr:#4f4e4e">
+            <h3>
+                <aside>
+                    <details>
+                        <summary>How often will you use the car?</summary>
+                        <ul class="summary">
+                            <li>
+                                If you plan on using the car for your daily activities (going to work or to the gym) you should choose "daily".
+                            </li>
+                            <li>
+                                If you plan on using the car just for the pleasure of driving in the weekend you should choose "weekendly". If you choose this answer you might want to get your attention to a sportier car.
+                            </li>
+                        </ul>
+                    </details>
+                </aside>
+            </h3>
+            <button type="button" style="--clr:#00FF9A" onclick="plusunu()" class="unu" id="buton1"><span>daily</span></button>
+            &nbsp;&nbsp;
+            <button type="button" style="--clr:#00FF9A" onclick="plusdoi()" class="unu" id="buton2" required><span>both</span></button>
+            &nbsp;&nbsp;
+            <button type="button" style="--clr:#00FF9A" class="unu" id="buton3"><span> weekendly</span></button>
+            <br><br>
+            </div>
+
+            <br><br><br>
+
+            <div class="chenar" style="--clr:#4f4e4e">
+            <h3>
+                <aside>
+                    <details>
+                        <summary>Maximum number of people you will be carrying:</summary>
+                        <ul class="summary">
+                            <li>
+                                The number of people you carry in your car determines the capacity of your car, as well as the size. For example, if you need to carry at least 5 people you will need more space and a bigger trunk.If you need your car just for yourself or to use it in the city you should choose "5&lt;". 
+                            </li>
+                        </ul>
+                    </details>
+                </aside>
+            </h3>
+            <button type="button" style="--clr:#00FF9A" class="doi" id="buton11"><span>5 &lt;</span></button>
+            &nbsp;&nbsp;
+            <button type="button" style="--clr:#00FF9A" onclick="plusunu()" class="doi" id="buton12"><span>5</span></button>
+            &nbsp;&nbsp;
+            <button type="button" style="--clr:#00FF9A" onclick="plusdoi()" class="doi" id="buton13"><span>5 &gt;</span></button>
+            <br><br>
+            </div>
+            
+            <br><br><br>
+
+            <div class="chenar" style="--clr:#4f4e4e">
+            <h3>
+                <aside>
+                    <details>
+                        <summary>Where will you drive the car?</summary>
+                        <ul class="summary">
+                            <li>
+                                If you want to drive the car in the traffic of your city you might want to choose "urban".
+                            </li>
+                            <li>
+                                If you want to use the car mostly on the motorway you should choose "extra urban". People who travel the country a lot might want to choose this answer.
+                            </li>
+                        </ul>
+                    </details>
+                </aside>
+            </h3>
+            <button type="button" style="--clr:#00FF9A" onclick="plusdoi()" class="trei" id="buton21"><span>urban</span></button>
+            &nbsp;&nbsp;
+            <button type="button" style="--clr:#00FF9A" onclick="plusunu()" class="trei" id="buton23"><span>both</span></button>
+            &nbsp;&nbsp;
+            <button type="button" style="--clr:#00FF9A" onclick="plustrei()" class="trei" id="buton22"><span>extra urban</span></button>
+            <br><br>
+            </div>
+            
+
+            <br><br><br>
+
+            <div class="chenar" style="--clr:#4f4e4e">
+            <h3>
+                <aside>
+                    <details>
+                        <summary>Do you need an extra safe car?</summary>
+                        <ul class="summary">
+                            <li>You might ask yourself "Who doesn't want his/her car to be safe?". Of course everyone does, but if you choose "yes" you believe safety is the turning point when it comes to making a choice of what car should you buy. You should take it into consideration if you need a car for you and your family.</li>
+                        </ul>
+                    </details>
+                </aside>
+            </h3>
+            <button type="button" style="--clr:#00FF9A" onclick="pluspatru()" class="patru" id="buton31"><span>yes</span></button>
+            &nbsp;&nbsp;
+            <button type="button" style="--clr:#00FF9A" class="patru" id="buton32"><span>no</span></button>
+            <br><br>
+            </div>
+            <br><br><br><br><br>
+
+
+            <a id="afisare" style="--clr:#74FF00" class="disabled"><span>submit</span></a>
+            
+            <a onclick="reset()" style="--clr:#FF2D00"><span>reset</span></a>
+            <br>
+            <script src="algoritm.js"></script>
+        </div>
+        <br>
+        <script>
+            var ceva = 
+            {
+                unu: false,
+                doi: false,
+                trei: false,
+                patru: false
+            };
+
+
+            function verificare()
+            {
+                if(ceva.unu && ceva.doi && ceva.trei && ceva.patru)
+                    document.getElementById('afisare').classList.remove('disabled');
+            }
+
+
+            function dezactivare(clasa, cevaceva) {
+            var butoane = document.querySelectorAll(clasa);
+            butoane.forEach(function (buton) {
+                buton.addEventListener('click', function () {
+                    if (!this.classList.contains("disabled")) { // Verifică dacă nu e deja dezactivat
+                        butoane.forEach(function (c) {
+                            c.classList.add("disabled"); // Doar adaugă clasa, nu setează `disabled=true`
+                });
+                ceva[cevaceva] = true;
+                verificare();
+                        }
+                    });
+                });
+            }
+            dezactivare('.unu', 'unu');
+            dezactivare('.doi', 'doi');
+            dezactivare('.trei', 'trei');
+            dezactivare('.patru', 'patru');
+        </script>
+       
+    </body>
+</html>

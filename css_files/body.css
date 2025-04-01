@@ -1,0 +1,12 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: inside;
+    text-align:center;
+    font-size: 40px;
+    font-family: 'Courier New';
+    background-color: #4f4e4e;
+    color:#ffffff;
+    letter-spacing: 0px;
+}
